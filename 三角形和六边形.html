@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	.box{
+		width:0px;
+		height:0px;
+		border:100px solid red;
+		border-left-color:blue;
+		border-right-color:green;
+		border-top-width:50px;
+		border-bottom-width:50px;		
+	}
+
+	.div1{
+		width:200px;
+		height:110px;
+		background-color:red;
+	}
+	.box1{
+		border-bottom-color:red;
+		border-top-color:#fff;
+		border-left-color:#fff;
+		border-right-color:#fff;
+	}
+	.box2{
+		border-top-color:red;
+		border-left-color:rgba(0,0,0,0); /* 透明 */
+		border-right-color:#fff;
+		border-bottom-color:#fff;
+	}
+
+
+/* ---------------------------------------------------------------------*/
+	.box-b{
+		width:732px;
+		margin:100px auto;
+	}
+	.box-b form p{
+		width:600px;
+		margin:18px auto;
+		height:74px;
+		background-color:#fff;
+		
+	}
+
+	/* 去除input和button 的默认盒模型 */
+	input,button{
+		border:0;
+		outline:0;
+		padding:0;
+		margin:0;
+	}
+	.pass-p,.user-p{
+		border:2px solid #808080;
+	}
+	.pass-p input,.user-p input{
+		width:500px;
+		height:70px;
+		font-size:18px;
+		padding-left:17px;
+	}
+	.btn-p button{
+		background-color:#ff1493;
+		/* padding:30px 280px; */
+		width:600px;
+		height:74px;
+		color:#fff;
+		font-size:18px;
+	}
+	.div-line{
+		width:600px;
+		margin:50px auto;
+		height:2px;
+		background-color:#808080;
+		text-align:center;
+	}
+
+	.div-line span{
+		padding:20px;
+		background-color:#fff
+	}
+
+
+  </style>	
+ </head>
+ <body>
+	<div class="box-a">
+		<div class="box box1"></div>	
+		<div class="div1"></div>
+		<div class="box box2"></div>
+	</div>
+
+	<hr/>
+	<div class="box-b">
+		<form>
+			<p class="user-p"><input type="text" placeholder="邮箱/手机号/小米ID"></p>
+			<p class="pass-p"><input type="password" placeholder="密码"></p>
+			<p class="btn-p"><button>登录</button></p>
+		</form>
+		<div class="div-line"> <span>其他方式登陆</span> </div>
+	</div>
+
+ </body>
+</html>
